@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              tools:context="it.androidavanzato.drawable.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCC"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white_android"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white_android"
+            android:tint="#F00"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white_android"
+            android:tint="#0F0"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white_android"
+            android:tint="#00F"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_normal"
+        android:onClick="click"
+        android:text="@string/hello"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_normal_no_overdraw"
+        android:onClick="click"
+        android:text="@string/hello"/>
+
+    <it.androidavanzato.drawable.ShadowButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="click"
+        android:text="@string/hello"
+        android:textColor="@color/red_text"
+        custom:backgroundColor="@color/button_red_background"
+        custom:borderColor="@color/button_red_border"/>
+
+    <it.androidavanzato.drawable.ShadowButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="click"
+        android:text="@string/hello"
+        android:textColor="@color/red_text"
+        android:visibility="gone"
+        custom:backgroundColor="#FFF"
+        custom:borderColor="#FFF"/>
+
+    <it.androidavanzato.drawable.ShadowButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="click"
+        android:text="World"
+        android:textColor="@color/red_text"
+        custom:backgroundColor="@color/button_red_background"
+        custom:borderColor="@color/button_red_border"/>
+
+    <it.androidavanzato.drawable.ShadowButton
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click"
+        android:text="@string/hello_world"
+        android:textColor="@color/green_text"
+        custom:backgroundColor="@color/button_green_background"
+        custom:borderColor="@color/button_green_border"/>
+</LinearLayout>
